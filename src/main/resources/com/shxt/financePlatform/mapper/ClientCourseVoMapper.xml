@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shxt.financePlatform.mapper.ClientCourseVoMapper">
+
+    <resultMap id="BaseResultMap" type="com.shxt.financePlatform.entity.ClientCourseVo">
+            <result property="courseId" column="course_id" jdbcType="INTEGER"/>
+            <result property="teacherId" column="teacher_id" jdbcType="INTEGER"/>
+            <result property="literaryCourse" column="literary_course" jdbcType="VARCHAR"/>
+            <result property="courseCover" column="course_cover" jdbcType="VARCHAR"/>
+            <result property="oldPrice" column="old_price" jdbcType="DOUBLE"/>
+            <result property="newPrice" column="new_price" jdbcType="DOUBLE"/>
+            <result property="courseName" column="course_name" jdbcType="VARCHAR"/>
+            <result property="textDescription" column="text_description" jdbcType="VARCHAR"/>
+            <result property="pritureDescription" column="priture_description" jdbcType="VARCHAR"/>
+            <result property="courseCategory" column="course_category" jdbcType="VARCHAR"/>
+            <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        course_id,teacher_id,literary_course,
+        course_cover,old_price,new_price,
+        course_name,text_description,priture_description,
+        course_category,user_name
+    </sql>
+</mapper>

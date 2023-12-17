@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shxt.financePlatform.mapper.UserTicketMapper">
+
+    <resultMap id="BaseResultMap" type="com.shxt.financePlatform.entity.UserTicket">
+            <id property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="ticket" column="ticket" jdbcType="VARCHAR"/>
+            <result property="expireTime" column="expire_time" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,ticket,expire_time
+    </sql>
+</mapper>

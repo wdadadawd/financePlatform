@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shxt.financePlatform.mapper.FileInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.shxt.financePlatform.entity.FileInfo">
+            <id property="fileId" column="file_id" jdbcType="INTEGER"/>
+            <result property="fileType" column="file_type" jdbcType="VARCHAR"/>
+            <result property="fileUrl" column="file_url" jdbcType="VARCHAR"/>
+            <result property="fatherId" column="father_id" jdbcType="INTEGER"/>
+            <result property="creatId" column="creat_id" jdbcType="INTEGER"/>
+            <result property="creatTime" column="creat_time" jdbcType="TIMESTAMP"/>
+            <result property="depth" column="depth" jdbcType="TINYINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        file_id,file_type,file_url,
+        father_id,creat_id,creat_time,
+        depth
+    </sql>
+</mapper>

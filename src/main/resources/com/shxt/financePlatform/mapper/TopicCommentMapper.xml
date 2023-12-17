@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shxt.financePlatform.mapper.TopicCommentMapper">
+
+    <resultMap id="BaseResultMap" type="com.shxt.financePlatform.entity.TopicComment">
+            <id property="commentId" column="comment_id" jdbcType="BIGINT"/>
+            <result property="topicId" column="topic_id" jdbcType="INTEGER"/>
+            <result property="commentContent" column="comment_content" jdbcType="VARCHAR"/>
+            <result property="likeSum" column="like_sum" jdbcType="INTEGER"/>
+            <result property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="dislikeSum" column="dislike_sum" jdbcType="INTEGER"/>
+            <result property="repliedId" column="replied_id" jdbcType="BIGINT"/>
+            <result property="fatherId" column="father_id" jdbcType="BIGINT"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        comment_id,topic_id,comment_content,
+        like_sum,user_id,dislike_sum,
+        replied_id,father_id
+    </sql>
+</mapper>

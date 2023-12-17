@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shxt.financePlatform.mapper.TopicUserVoMapper">
+
+    <resultMap id="BaseResultMap" type="com.shxt.financePlatform.entity.TopicUserVo">
+            <result property="userName" column="user_name" jdbcType="VARCHAR"/>
+            <result property="profilePhoto" column="profile_photo" jdbcType="VARCHAR"/>
+            <result property="communityName" column="community_name" jdbcType="VARCHAR"/>
+            <result property="topicId" column="topic_id" jdbcType="INTEGER"/>
+            <result property="topicTitle" column="topic_title" jdbcType="VARCHAR"/>
+            <result property="topicContent" column="topic_content" jdbcType="VARCHAR"/>
+            <result property="topicHot" column="topic_hot" jdbcType="BIGINT"/>
+            <result property="communityId" column="community_id" jdbcType="INTEGER"/>
+            <result property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="sendTime" column="send_time" jdbcType="TIMESTAMP"/>
+            <result property="likeSum" column="like_sum" jdbcType="INTEGER"/>
+            <result property="dislikeSum" column="dislike_sum" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_name,profile_photo,community_name,
+        topic_id,topic_title,topic_content,
+        topic_hot,community_id,user_id,
+        send_time,like_sum,dislike_sum
+    </sql>
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shxt.financePlatform.mapper.TeacherInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.shxt.financePlatform.entity.TeacherInfo">
+            <id property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="teachingAge" column="teaching_age" jdbcType="INTEGER"/>
+            <result property="teachingStyle" column="teaching_style" jdbcType="VARCHAR"/>
+            <result property="teachingQualification" column="teaching_qualification" jdbcType="VARCHAR"/>
+            <result property="isAuthentication" column="is_authentication" jdbcType="TINYINT"/>
+            <result property="teacherProfile" column="teacher_profile" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,teaching_age,teaching_style,
+        teaching_qualification,is_authentication,teacher_profile
+    </sql>
+</mapper>

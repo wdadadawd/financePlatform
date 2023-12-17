@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shxt.financePlatform.mapper.CommunityTopicMapper">
+
+    <resultMap id="BaseResultMap" type="com.shxt.financePlatform.entity.CommunityTopic">
+            <id property="topicId" column="topic_id" jdbcType="INTEGER"/>
+            <result property="topicTitle" column="topic_title" jdbcType="VARCHAR"/>
+            <result property="topicContent" column="topic_content" jdbcType="VARCHAR"/>
+            <result property="topicHot" column="topic_hot" jdbcType="BIGINT"/>
+            <result property="communityId" column="community_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        topic_id,topic_title,topic_content,
+        topic_hot,community_id
+    </sql>
+</mapper>

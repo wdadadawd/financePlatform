@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shxt.financePlatform.mapper.ClientInfoMapper">
+
+    <resultMap id="BaseResultMap" type="com.shxt.financePlatform.entity.ClientInfo">
+            <id property="userId" column="user_id" jdbcType="INTEGER"/>
+            <result property="profilePhoto" column="profile_photo" jdbcType="VARCHAR"/>
+            <result property="birthday" column="birthday" jdbcType="DATE"/>
+            <result property="sex" column="sex" jdbcType="VARCHAR"/>
+            <result property="individuation" column="individuation" jdbcType="TINYINT"/>
+            <result property="position" column="position" jdbcType="VARCHAR"/>
+            <result property="education" column="education" jdbcType="VARCHAR"/>
+            <result property="preferredStyle" column="preferred_style" jdbcType="VARCHAR"/>
+            <result property="freeTime" column="free_time" jdbcType="VARCHAR"/>
+            <result property="studyTime" column="study_time" jdbcType="INTEGER"/>
+            <result property="positionTarget" column="position_target" jdbcType="VARCHAR"/>
+            <result property="studyCategory" column="study_category" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        user_id,profile_photo,birthday,
+        sex,individuation,position,
+        education,preferred_style,free_time,
+        study_time,position_target,study_category
+    </sql>
+</mapper>

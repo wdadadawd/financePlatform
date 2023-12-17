@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shxt.financePlatform.mapper.StudySituationMapper">
+
+    <resultMap id="BaseResultMap" type="com.shxt.financePlatform.entity.StudySituation">
+            <id property="clientId" column="client_id" jdbcType="INTEGER"/>
+            <id property="sectionId" column="section_id" jdbcType="INTEGER"/>
+            <result property="learningTime" column="learning_time" jdbcType="BIGINT"/>
+            <result property="accomplish" column="accomplish" jdbcType="TINYINT"/>
+            <result property="sectionScore" column="section_score" jdbcType="DOUBLE"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        client_id,section_id,learning_time,
+        accomplish,section_score
+    </sql>
+</mapper>

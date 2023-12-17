@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shxt.financePlatform.mapper.StudyCommunityMapper">
+
+    <resultMap id="BaseResultMap" type="com.shxt.financePlatform.entity.StudyCommunity">
+            <id property="communityId" column="community_id" jdbcType="INTEGER"/>
+            <result property="createId" column="create_id" jdbcType="INTEGER"/>
+            <result property="communityType" column="community_type" jdbcType="VARCHAR"/>
+            <result property="communityIntroduce" column="community_introduce" jdbcType="VARCHAR"/>
+            <result property="communityName" column="community_name" jdbcType="VARCHAR"/>
+            <result property="communityHot" column="community_hot" jdbcType="BIGINT"/>
+            <result property="scoureId" column="scoure_id" jdbcType="INTEGER"/>
+    </resultMap>
+
+    <sql id="Base_Column_List">
+        community_id,create_id,community_type,
+        community_introduce,community_name,community_hot,
+        scoure_id
+    </sql>
+</mapper>
